@@ -1,0 +1,209 @@
+.recipeContent {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 15px;
+  background: #fdfdfd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipeImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  padding: 15px;
+  margin-right: 50px;
+}
+
+.recipeImage img {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  /*Resimlerinyüksekliğisabitlendi*/
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.recipeImage img:hover {
+  transform: scale(1.1);
+}
+
+.recipeText {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Instructions İçeriği */
+.instructions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fdfdfd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content img {
+  width: 200px !important;
+  height: 200px !important;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.content p {
+  flex: 1;
+  font-size: medium;
+}
+
+/* Başlıklara Animasyon ve Renk */
+.title_animated {
+  font-size: 20px;
+  font-weight: bold;
+  color: #006600;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
+  margin-top: 30px;
+}
+
+.title_animated::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -5px;
+  left: 0;
+  background-color: #b37700;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease-in-out;
+}
+
+.title_animated:hover {
+  color: #b37700;
+}
+
+.title_animated:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.relatedRecipes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.recipeCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.recipeCard img {
+  width: 80px !important;
+  height: 100px !important;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.recipeCard > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 1px 8px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row !important;
+  margin-top: 4px;
+}
+
+.videoTitle {
+  margin-bottom: 20px;
+  color: #b37700;
+}
+
+.videoIframe {
+  border-radius: 10px;
+}
+
+hr {
+  margin-top: 40px;
+  border: none;
+  height: 1px;
+  background-color: lightgray;
+}
+.ratingInline {
+  margin-top: 0.5rem;
+}
+
+/* Author image için sınıf ekle, örnek: .authorImage */
+.authorImage {
+  max-width: 120px;
+  margin-top: 20px;
+}
+
+.rightCol {
+  display: block;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .recipeContent {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .recipeImage img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content img {
+    width: 100%;
+    height: auto;
+  }
+
+  .authorImage {
+    max-width: 80px;
+    margin-top: 10px;
+  }
+
+  .rightCol {
+    display: none !important;
+  }
+}

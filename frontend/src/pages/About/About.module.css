@@ -1,0 +1,228 @@
+/* Hero Section */
+.hero {
+  background-image: url("../../assets/about_title.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 570px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.overlay {
+  color: white;
+  padding: 40px;
+  text-align: center;
+  max-width: 80%;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+}
+
+.overlay h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #ffcc70;
+}
+
+.overlay p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Görseller başlangıçta soldan veya sağdan gizli */
+.imageSlideInLeft,
+.imageSlideInRight {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 1s ease;
+}
+
+.imageSlideInRight {
+  transform: translateX(100px);
+}
+
+/* Görünür hale geldiğinde */
+.imageVisible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Two Column Sections */
+.section {
+  display: flex;
+  align-items: center;
+  margin: 60px 0;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.text {
+  flex: 1 1 500px;
+  padding: 20px;
+  text-align: center;
+}
+
+.text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #006600;
+}
+
+.text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.image {
+  flex: 1 1 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Centered Section */
+.centeredSection {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.centeredImage {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.centeredText {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Call to Action Section */
+.callToAction {
+  background-image: url("../../assets/about_3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  border-radius: 10px;
+}
+
+.callOverlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  max-width: 80%;
+}
+
+.callOverlay h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffcc70;
+  line-height: 1.5;
+}
+
+.contactButton {
+  padding: 12px 24px;
+  background-color: #ff7f50;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.contactButton:hover {
+  background-color: #ff5722;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero {
+    height: 320px;
+    margin-bottom: 30px;
+  }
+
+  .overlay {
+    max-width: 95%;
+    padding: 20px;
+  }
+
+  .overlay h1 {
+    font-size: 40px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .section {
+    display: flex;
+    align-items: center;
+    margin: 60px 0;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .section:first-of-type {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .text h2 {
+    font-size: 28px;
+  }
+
+  .text,
+  .image {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .image img {
+    width: 100%;
+  }
+}

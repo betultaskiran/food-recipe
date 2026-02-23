@@ -1,0 +1,10 @@
+.btn {
+  background-color: #006600;
+  color: #fff;
+  font-weight: 400;
+  font-size: var(--mantine-font-size-md);
+  padding: 10px 22px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}

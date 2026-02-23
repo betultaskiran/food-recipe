@@ -1,0 +1,68 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  /* background: rgba(255, 255, 255, 0.9); */
+  color: #fff;
+  background-image: url("../../assets/tomato.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.link {
+  color: #ffbb00;
+  cursor: pointer;
+  font-weight: 800;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #ff7b00;
+}
+
+/* .button {
+  background: linear-gradient(135deg, #ff7b00, #ffbb00);
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #ff5700, #ff9800);
+} */
+.button {
+  background: linear-gradient(
+    135deg,
+    #006600,
+    #009900
+  ); /* Gradient using shades of green */
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(
+    135deg,
+    #004d00,
+    #007700
+  ); /* Darker green for hover effect */
+}

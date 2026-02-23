@@ -1,0 +1,53 @@
+.hero {
+  background-image: url("../../assets/recipe_2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 570px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+
+.overlay {
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 80%;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+}
+
+/* Mobil uyum için genişlik ve font ayarı */
+@media (max-width: 768px) {
+  .hero {
+    height: 320px;
+    margin-bottom: 30px;
+  }
+
+  .overlay {
+    max-width: 95%; /* Sadece genişlik artırıldı */
+    padding: 20px;
+  }
+
+  .overlay h1 {
+    font-size: 32px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,33 @@
+.formTitle {
+  font-size: 25px;
+  font-weight: bold;
+  color: #006600;
+  margin-top: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.formTitle:hover {
+  color: #b37700;
+}
+
+.formRow {
+  display: flex;
+  gap: 1rem;
+}
+
+.formRow > div {
+  flex: 1;
+}
+
+.messageField textarea {
+  min-height: 200px !important;
+}
+
+.formButton {
+  background-color: #006600;
+  margin-bottom: 20px;
+}
+
+.formButton:hover {
+  background-color: #b37700;
+}

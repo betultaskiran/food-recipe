@@ -1,0 +1,82 @@
+/* Founders Section */
+.foundersSection {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.foundersTitle {
+  font-size: 40px;
+  color: #ffcc70;
+  margin-bottom: 10px;
+}
+
+.foundersSubtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.foundersContainer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.founderCard {
+  width: 250px;
+  text-align: center;
+  perspective: 1000px; /* 3D derinlik efekti için */
+}
+
+.founderImage {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  transition: transform 1.8s ease;
+  transform-style: preserve-3d;
+}
+
+.founderCard:hover .founderImage {
+  transform: rotateY(360deg); /* Y ekseninde 360 derece döndür */
+}
+
+.founderCard h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #006600;
+}
+
+.founderCard p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socialIcons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #eee;
+  color: #555;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.socialIcons a:hover {
+  background-color: #ffcc70;
+  color: white;
+}

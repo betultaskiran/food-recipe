@@ -1,0 +1,95 @@
+.text {
+  height: 42vw;
+  width: 100%;
+  margin: 10px auto;
+  background: url("../../assets/carousel.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+}
+
+/* Ana içerik kutusu */
+.contents {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1vw;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  right: 5%;
+  animation: fadeIn 3s;
+}
+
+/* Başlık */
+.contents h2 {
+  font-weight: 600;
+  color: white;
+  font-size: max(4vw, 22px);
+  text-align: right;
+}
+
+/* Açıklama */
+.contents p {
+  color: white;
+  font-size: 1.2vw;
+  text-align: right;
+}
+
+/* Buton */
+.contactButton {
+  padding: 12px 24px;
+  background-color: #ff8c00;
+  color: white;
+  text-decoration: none;
+  font-size: 1vw;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 3s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.contactButton:hover {
+  background-color: #ff5722;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Mobil için düzeltmeler */
+@media (max-width: 768px) {
+  .text {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .contents {
+    position: static;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .contents h2 {
+    font-size: 20px;
+  }
+
+  .contents p {
+    font-size: 14px;
+  }
+
+  .contactButton {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

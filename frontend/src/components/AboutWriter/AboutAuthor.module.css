@@ -1,0 +1,100 @@
+.authorContainer {
+  display: flex;
+  align-items: center; /* Resim ve metni hizalar */
+  gap: 15px; /* Resim ve metin arasına boşluk bırakır */
+  padding: 10px;
+}
+
+.authorImage {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 140px;
+  aspect-ratio: 1; /*aspect-ratio CSS özelliği, bir öğenin genişliğinin yüksekliğine oranını belirlemek için kullanılır.aspect-ratio yalnızca öğeye bir genişlik veya yükseklik verildiğinde etkili olur.*/
+  margin-top: -55px;
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorInfo p:first-child {
+  font-size: 12px;
+  font-weight: bold;
+  color: gray;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.authorInfo h3 {
+  font-size: 22px;
+  margin: 0;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #b37700;
+  transition: color 0.3s ease-in-out;
+}
+
+.authorInfo h3:hover {
+  color: #006600;
+}
+
+.authorInfo p {
+  font-size: 15px;
+  color: #747373;
+  margin: 5px 0 0;
+}
+
+/* Sosyal medya ikonları */
+.socialIcons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+/* Daire içine alınmış ikonlar */
+.iconWrapper {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #e7e2e2;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* İkonları ortalar ve renk değiştirir */
+.icon {
+  color: #006600;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover efekti */
+.iconWrapper:hover {
+  background-color: #b37700;
+  transform: scale(1.1);
+}
+
+.iconWrapper:hover .icon {
+  color: #e7e2e2;
+}
+
+/* Mobil uyumlu hale getir (600px'den küçük ekranlarda) */
+@media (max-width: 600px) {
+  .authorContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+}

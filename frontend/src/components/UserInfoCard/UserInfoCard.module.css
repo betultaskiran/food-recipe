@@ -1,0 +1,63 @@
+.adminLabel {
+  font-size: 14px;
+  color: #007bff;
+  margin-left: 8px;
+}
+
+.socialIcon {
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  padding: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.socialIcon:hover {
+  background-color: tomato;
+  transform: scale(1.1);
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.socialLink:hover {
+  color: #007bff;
+}
+
+.textTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #006600;
+  transition: color 0.3s ease;
+}
+
+.textTitle:hover {
+  color: #b37700;
+  cursor: pointer;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Yeni Avatar boyutu */
+.avatarLarge {
+  width: 80px; /* Boyutu arttırdık */
+  height: 80px;
+}
+
+/* Badge için stil */
+.roleBadge {
+  background-color: #ffcc70;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 8px;
+  padding: 4px 8px;
+  border-radius: 12px;
+}

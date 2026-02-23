@@ -1,0 +1,87 @@
+.ratingOverview {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin-top: 20px;
+}
+
+.ratingTitle {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: start;
+}
+
+.ratingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.ratingSummary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ratingScore {
+  font-size: 16px;
+  font-weight: bold;
+  color: #006600;
+  transition: transform 0.3s ease-in-out;
+}
+
+.ratingScore:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.averageRating {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.ratingCount {
+  font-size: 14px;
+  color: gray;
+}
+
+.ratingDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ratingProgress {
+  flex: 1; /*flex: 1: Bu kural, öğenin kalan boş alanı almasına olanak tanır. Eğer burada başka öğeler de varsa, bu öğe geri kalan tüm alanı kullanacaktır. Bu öğe, esnek konteynerde mümkün olan en fazla alanı kaplar.*/
+  height: 10px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  position: relative; /*Bu, öğenin konumunu relative olarak ayarlar. Böylece, içindeki öğeler (örneğin, dolgu) bu öğe içinde konumlandırılabilir. */
+  overflow: hidden;
+}
+
+.ratingFill {
+  height: 100%;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #ff7b00, #ffbb00);
+  transition: width 0.3s ease-in-out;
+}
+
+.ratingText {
+  font-size: 14px;
+  min-width: 20px;
+  text-align: right;
+  color: #333;
+}
