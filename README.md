@@ -1,8 +1,8 @@
-# Food Recipe App 🍳
+# Food Recipe App 
 
 Bu proje, kullanıcıların yemek tarifleri paylaşabileceği, favorilerine ekleyebileceği ve yorum yapabileceği tam kapsamlı bir **Full-Stack Yemek Tarifi** uygulamasıdır. Kullanıcı dostu arayüzü ve güçlü backend yapısı ile modern bir web deneyimi sunar.
 
-## 🚀 Özellikler
+##  Özellikler
 
 - **Kullanıcı Yetkilendirme:** Kayıt olma, giriş yapma ve JWT tabanlı güvenli oturum yönetimi.
 - **Yemek Tarifi Yönetimi:** Tarif ekleme, düzenleme, silme ve görüntüleme.
@@ -13,7 +13,7 @@ Bu proje, kullanıcıların yemek tarifleri paylaşabileceği, favorilerine ekle
 - **Modern UI:** Mantine UI ve React kullanılarak oluşturulmuş responsive tasarım.
 - **Ödeme Entegrasyonu:** Stripe altyapısı (hazırlık aşamasında/mevcut).
 
-## 🛠️ Kullanılan Teknolojiler
+## Kullanılan Teknolojiler
 
 ### Frontend
 - **React 19** & **Vite**
@@ -32,7 +32,7 @@ Bu proje, kullanıcıların yemek tarifleri paylaşabileceği, favorilerine ekle
 - **Multer** (Dosya yükleme)
 - **Stripe** (Ödeme sistemi)
 
-## 📦 Kurulum
+## Kurulum
 
 Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyin:
 
@@ -61,7 +61,7 @@ cd ../frontend
 npm install
 ```
 
-## 🏃‍♂️ Çalıştırma
+## Çalıştırma
 
 ### Backend'i Başlatın
 ```bash
@@ -76,7 +76,7 @@ npm run dev
 ```
 Uygulama varsayılan olarak `http://localhost:5173` adresinde çalışacaktır.
 
-## 📄 Lisans
+## Lisans
 Bu proje [ISC](LICENSE) lisansı altındadır.
 
 ---
